@@ -1,0 +1,85 @@
+Class,StudentGroup,Subject,Code,Type,Hours,FacultyID,Faculty,Program,Semester,RoomType
+BSCS-4A,BSCS-4A,Data Structures,CS201,Theory,3,F001,Dr. Ahmed,BSCS,4,Theory
+BSCS-4A,BSCS-4A,Database Lab,CS203,Lab,1,F003,Dr. Khan,BSCS,4,Lab
+BSCS-4A,BSCS-4A,Algorithms,CS202,Theory,3,F002,Dr. Bilal,BSCS,4,Theory
+BSCS-4A,BSCS-4A,Web Development,CS250,Theory,3,F007,Dr. Samina,BSCS,4,Theory
+BSCS-4A,BSCS-4A,Software Testing,CS251,Lab,2,F035,Dr. Amal,BSCS,4,Lab
+BSCS-4B,BSCS-4B,Operating Systems,CS204,Theory,3,F005,Dr. Sara,BSCS,4,Theory
+BSCS-4B,BSCS-4B,Networking,CS205,Theory,2,F006,Dr. Tariq,BSCS,4,Theory
+BSCS-4B,BSCS-4B,OS Lab,CS206,Lab,1,F005,Dr. Sara,BSCS,4,Lab
+BSCS-4B,BSCS-4B,Cybersecurity,CS252,Theory,3,F017,Dr. Layla,BSCS,4,Theory
+BSCS-4B,BSCS-4B,Security Lab,CS253,Lab,2,F017,Dr. Layla,BSCS,4,Lab
+BSCS-4C,BSCS-4C,Artificial Intelligence,CS208,Theory,3,F008,Dr. Hamid,BSCS,4,Theory
+BSCS-4C,BSCS-4C,ML Lab,CS209,Lab,1,F008,Dr. Hamid,BSCS,4,Lab
+BSCS-4C,BSCS-4C,Cloud Computing,CS254,Theory,3,F023,Dr. Rana,BSCS,4,Theory
+BSCS-4C,BSCS-4C,Cloud Lab,CS255,Lab,2,F023,Dr. Rana,BSCS,4,Lab
+BSCS-4D,BSCS-4D,Software Engineering,CS210,Theory,3,F009,Dr. Aliya,BSCS,4,Theory
+BSCS-4D,BSCS-4D,SE Lab,CS211,Lab,1,F009,Dr. Aliya,BSCS,4,Lab
+BSCS-4D,BSCS-4D,DevOps,CS256,Theory,3,F026,Dr. Mazen,BSCS,4,Theory
+BSCS-4D,BSCS-4D,DevOps Lab,CS257,Lab,2,F026,Dr. Mazen,BSCS,4,Lab
+BSCS-3A,BSCS-3A,Discrete Mathematics,CS301,Theory,3,F010,Dr. Hasan,BSCS,3,Theory
+BSCS-3A,BSCS-3A,Compiler Design,CS302,Theory,3,F011,Dr. Fatima,BSCS,3,Theory
+BSCS-3A,BSCS-3A,Compiler Lab,CS303,Lab,1,F011,Dr. Fatima,BSCS,3,Lab
+BSCS-3A,BSCS-3A,Database Systems,CS304,Theory,3,F032,Dr. Imran,BSCS,3,Theory
+BSCS-3A,BSCS-3A,Database Lab,CS305,Lab,2,F032,Dr. Imran,BSCS,3,Lab
+BSCS-3B,BSCS-3B,Computer Architecture,CS310,Theory,3,F012,Dr. Aisha,BSCS,3,Theory
+BSCS-3B,BSCS-3B,Graphics Programming,CS311,Theory,3,F013,Dr. Waleed,BSCS,3,Theory
+BSCS-3B,BSCS-3B,Graphics Lab,CS312,Lab,1,F013,Dr. Waleed,BSCS,3,Lab
+BSCS-3B,BSCS-3B,Numerical Computing,CS313,Theory,3,F014,Dr. Nadia,BSCS,3,Theory
+BSCS-3B,BSCS-3B,Numerical Lab,CS314,Lab,2,F014,Dr. Nadia,BSCS,3,Lab
+BSCS-3C,BSCS-3C,Game Development,CS320,Theory,3,F015,Dr. Samir,BSCS,3,Theory
+BSCS-3C,BSCS-3C,Game Dev Lab,CS321,Lab,1,F015,Dr. Samir,BSCS,3,Lab
+BSCS-3C,BSCS-3C,Network Protocols,CS322,Theory,3,F016,Dr. Yaseen,BSCS,3,Theory
+BSCS-3C,BSCS-3C,Network Lab,CS323,Lab,2,F016,Dr. Yaseen,BSCS,3,Lab
+BSCS-3D,BSCS-3D,Internet of Things,CS330,Theory,3,F024,Dr. Karim,BSCS,3,Theory
+BSCS-3D,BSCS-3D,IoT Lab,CS331,Lab,1,F024,Dr. Karim,BSCS,3,Lab
+BSCS-3D,BSCS-3D,Big Data Analytics,CS332,Theory,3,F025,Dr. Dina,BSCS,3,Theory
+BSCS-3D,BSCS-3D,Big Data Lab,CS333,Lab,2,F025,Dr. Dina,BSCS,3,Lab
+BSCS-2A,BSCS-2A,Linear Algebra,CS401,Theory,3,F018,Dr. Rashid,BSCS,2,Theory
+BSCS-2A,BSCS-2A,Calculus II,CS402,Theory,3,F019,Dr. Leila,BSCS,2,Theory
+BSCS-2A,BSCS-2A,Data Analysis,CS403,Lab,2,F020,Dr. Mustafa,BSCS,2,Lab
+BSCS-2A,BSCS-2A,Probability Statistics,CS404,Theory,3,F019,Dr. Leila,BSCS,2,Theory
+BSCS-2B,BSCS-2B,Web Technologies,CS410,Theory,3,F021,Dr. Zainab,BSCS,2,Theory
+BSCS-2B,BSCS-2B,Mobile Development,CS411,Theory,3,F022,Dr. Hassan,BSCS,2,Theory
+BSCS-2B,BSCS-2B,Mobile Lab,CS412,Lab,1,F022,Dr. Hassan,BSCS,2,Lab
+BSCS-2B,BSCS-2B,Web Design,CS413,Lab,2,F021,Dr. Zainab,BSCS,2,Lab
+BSCS-2C,BSCS-2C,Advanced Databases,CS420,Theory,3,F032,Dr. Imran,BSCS,2,Theory
+BSCS-2C,BSCS-2C,Database Admin,CS421,Lab,2,F032,Dr. Imran,BSCS,2,Lab
+BSCS-2C,BSCS-2C,System Design,CS422,Theory,3,F038,Dr. Jamal,BSCS,2,Theory
+BSCS-2C,BSCS-2C,Design Project,CS423,Lab,1,F038,Dr. Jamal,BSCS,2,Lab
+BSCS-2D,BSCS-2D,Object Oriented Programming,CS430,Theory,3,F028,Dr. Jalal,BSCS,2,Theory
+BSCS-2D,BSCS-2D,OOP Lab,CS431,Lab,2,F028,Dr. Jalal,BSCS,2,Lab
+BSCS-2D,BSCS-2D,Advanced Python,CS432,Theory,3,F034,Dr. Sana,BSCS,2,Theory
+BSCS-2D,BSCS-2D,Python Lab,CS433,Lab,1,F034,Dr. Sana,BSCS,2,Lab
+BSCS-1A,BSCS-1A,Introduction to CS,CS501,Theory,3,F027,Dr. Saad,BSCS,1,Theory
+BSCS-1A,BSCS-1A,Programming I,CS502,Theory,3,F028,Dr. Jalal,BSCS,1,Theory
+BSCS-1A,BSCS-1A,Programming Lab I,CS503,Lab,1,F028,Dr. Jalal,BSCS,1,Lab
+BSCS-1A,BSCS-1A,Digital Literacy,CS504,Theory,2,F031,Dr. Noor,BSCS,1,Theory
+BSCS-1B,BSCS-1B,Digital Logic,CS510,Theory,3,F029,Dr. Reem,BSCS,1,Theory
+BSCS-1B,BSCS-1B,Math for CS I,CS511,Theory,3,F030,Dr. Tariq,BSCS,1,Theory
+BSCS-1B,BSCS-1B,CS Lab,CS512,Lab,1,F029,Dr. Reem,BSCS,1,Lab
+BSCS-1B,BSCS-1B,Electronics Basics,CS513,Theory,2,F033,Dr. Wael,BSCS,1,Theory
+BSCS-1C,BSCS-1C,English for CS,CS520,Theory,2,F031,Dr. Noor,BSCS,1,Theory
+BSCS-1C,BSCS-1C,Intro to Databases,CS521,Theory,3,F032,Dr. Imran,BSCS,1,Theory
+BSCS-1C,BSCS-1C,Database Lab,CS522,Lab,1,F032,Dr. Imran,BSCS,1,Lab
+BSCS-1C,BSCS-1C,Logic and Algorithms,CS523,Theory,3,F010,Dr. Hasan,BSCS,1,Theory
+BSCS-1D,BSCS-1D,Physics I,CS530,Theory,3,F033,Dr. Wael,BSCS,1,Theory
+BSCS-1D,BSCS-1D,Programming II,CS531,Theory,3,F034,Dr. Sana,BSCS,1,Theory
+BSCS-1D,BSCS-1D,Programming Lab II,CS532,Lab,1,F034,Dr. Sana,BSCS,1,Lab
+BSCS-1D,BSCS-1D,Problem Solving,CS533,Theory,2,F027,Dr. Saad,BSCS,1,Theory
+SE-4A,SE-4A,Software Testing,SE201,Theory,3,F035,Dr. Amal,SE,4,Theory
+SE-4A,SE-4A,Testing Lab,SE202,Lab,1,F035,Dr. Amal,SE,4,Lab
+SE-4A,SE-4A,Software Maintenance,SE203,Theory,3,F036,Dr. Helia,SE,4,Theory
+SE-4A,SE-4A,Quality Metrics,SE204,Lab,2,F036,Dr. Helia,SE,4,Lab
+SE-4B,SE-4B,Requirements Analysis,SE210,Theory,3,F037,Dr. Aziz,SE,4,Theory
+SE-4B,SE-4B,Design Patterns,SE211,Theory,3,F037,Dr. Aziz,SE,4,Theory
+SE-4B,SE-4B,Design Lab,SE212,Lab,1,F037,Dr. Aziz,SE,4,Lab
+SE-4B,SE-4B,Software Verification,SE213,Lab,2,F040,Dr. Sinan,SE,4,Lab
+SE-3A,SE-3A,Project Management,SE301,Theory,3,F038,Dr. Jamal,SE,3,Theory
+SE-3A,SE-3A,Agile Methods,SE302,Theory,3,F039,Dr. Maha,SE,3,Theory
+SE-3A,SE-3A,Agile Lab,SE303,Lab,1,F039,Dr. Maha,SE,3,Lab
+SE-3A,SE-3A,Risk Management,SE304,Theory,2,F038,Dr. Jamal,SE,3,Theory
+SE-3B,SE-3B,Quality Assurance,SE310,Theory,3,F040,Dr. Sinan,SE,3,Theory
+SE-3B,SE-3B,QA Lab,SE311,Lab,1,F040,Dr. Sinan,SE,3,Lab
+SE-3B,SE-3B,Performance Testing,SE312,Theory,3,F041,Dr. Yasmin,SE,3,Theory
+SE-3B,SE-3B,Performance Lab,SE313,Lab,2,F041,Dr. Yasmin,SE,3,Lab
