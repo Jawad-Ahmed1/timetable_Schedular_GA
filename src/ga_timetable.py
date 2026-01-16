@@ -293,8 +293,7 @@ class GeneticAlgorithmTimetable:
                     break
         
         return timetable
-    
-    # Simple fitness function
+
     def calculate_fitness(self, timetable):
         if not timetable:
             return 0
@@ -318,14 +317,102 @@ class GeneticAlgorithmTimetable:
         fitness -= penalty
         return max(fitness, 1)
     
+    # CROSSOVER: Breed two good timetables
+    def crossover(self, parent1, parent2):
+        """Combine two timetables to create offspring"""
+        if not parent1 or not parent2:
+            return self.create_individual()
+        
+        # Take first half from parent1, second half from parent2
+        split_point = len(parent1) // 2
+        offspring = parent1[:split_point] + parent2[split_point:]
+        return offspring
+    
+    # MUTATION: Randomly modify a timetable
+    def mutate(self, timetable):
+        """Randomly change some classes in the timetable"""
+        if not timetable or len(timetable) == 0:
+            return timetable
+        
+        mutated = [entry.copy() for entry in timetable]
+        mutation_rate = 0.2  # 20% chance to mutate
+        
+        for entry in mutated:
+            if random.random() < mutation_rate:
+                # Randomly change day
+                days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+                entry['Day'] = random.choice(days)
+                
+                # Randomly change time slot
+                entry['Time Slot'] = random.choice(self.time_slots)
+                
+                # Randomly change room (theory or lab based on type)
+                if entry['Type'] == 'Lab':
+                    available_rooms = [r for r in self.classrooms if 'Lab' in r]
+                else:
+                    available_rooms = [r for r in self.classrooms if 'Lab' not in r]
+                
+                if available_rooms:
+                    entry['Room'] = random.choice(available_rooms)
+                
+                # Update start and end times
+                start_hour = int(entry['Time Slot'].split(':')[0])
+                duration = int(entry['Duration'].split()[0])
+                end_hour = start_hour + duration
+                entry['Start Time'] = f"{start_hour:02d}:00"
+                entry['End Time'] = f"{end_hour:02d}:00"
+        
+        return mutated
+    
+    # SELECTION: Pick best individuals for reproduction
+    def selection(self, population, fitness_scores, num_parents=2):
+        """Select best parents based on fitness"""
+        # Sort by fitness (descending)
+        sorted_indices = sorted(range(len(fitness_scores)), 
+                               key=lambda i: fitness_scores[i], 
+                               reverse=True)
+        
+        # Return top parents
+        parents = [population[i] for i in sorted_indices[:num_parents]]
+        return parents
+    
     def run(self, generations=50, population_size=20):
+        """Run true Genetic Algorithm with selection, crossover, and mutation"""
         population = [self.create_individual() for _ in range(population_size)]
         best_individual = None
         best_fitness = 0
+        fitness_history = []
+        
         for gen in range(generations):
-            for individual in population:
-                fitness = self.calculate_fitness(individual)
-                if fitness > best_fitness:
-                    best_fitness = fitness
-                    best_individual = individual
+            # Calculate fitness for all individuals
+            fitness_scores = [self.calculate_fitness(individual) for individual in population]
+            
+            # Track best in this generation
+            current_best_idx = fitness_scores.index(max(fitness_scores))
+            current_best_fitness = fitness_scores[current_best_idx]
+            
+            if current_best_fitness > best_fitness:
+                best_fitness = current_best_fitness
+                best_individual = population[current_best_idx]
+            
+            fitness_history.append(best_fitness)
+            
+            # SELECTION: Select best parents
+            parents = self.selection(population, fitness_scores, num_parents=4)
+            
+            # Create new generation
+            new_population = [best_individual]  # Keep best (elitism)
+            
+            while len(new_population) < population_size:
+                # CROSSOVER: Breed parents
+                parent1, parent2 = random.sample(parents, 2)
+                offspring = self.crossover(parent1, parent2)
+                
+                # MUTATION: Mutate offspring
+                offspring = self.mutate(offspring)
+                
+                new_population.append(offspring)
+            
+            population = new_population
+        
         return best_individual, best_fitness
