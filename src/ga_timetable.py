@@ -372,38 +372,38 @@ class GeneticAlgorithmTimetable:
             return timetable
         
         mutated = [entry.copy() for entry in timetable]
-        mutation_rate = 0.3  # 30% chance to mutate (increased from 20%)
+        mutation_rate = 0.5  # 50% chance to mutate (increased from 30%)
         
-        for entry in mutated:
+        for i, entry in enumerate(mutated):
             if random.random() < mutation_rate:
-                mutation_type = random.choice(['day', 'time', 'room', 'swap'])
-                
-                if mutation_type == 'day':
-                    # Randomly change day
-                    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-                    entry['Day'] = random.choice(days)
-                
-                elif mutation_type == 'time':
-                    # Randomly change time slot
-                    entry['Time Slot'] = random.choice(self.time_slots)
-                
-                elif mutation_type == 'room':
-                    # Randomly change room (theory or lab based on type)
-                    if entry['Type'] == 'Lab':
-                        available_rooms = [r for r in self.classrooms if 'Lab' in r]
-                    else:
-                        available_rooms = [r for r in self.classrooms if 'Lab' not in r]
+                # Apply 1-3 mutations per entry for more aggressive changes
+                num_mutations = random.randint(1, 3)
+                for _ in range(num_mutations):
+                    mutation_type = random.choice(['day', 'time', 'room', 'swap'])
                     
-                    if available_rooms:
-                        entry['Room'] = random.choice(available_rooms)
-                
-                elif mutation_type == 'swap' and len(mutated) > 1:
-                    # Swap with another random entry
-                    other_idx = random.randint(0, len(mutated) - 1)
-                    mutated[entry.index if hasattr(entry, 'index') else mutated.index(entry)], mutated[other_idx] = mutated[other_idx], entry
-                
-                # Update start and end times
-                if mutation_type in ['time', 'day', 'swap']:
+                    if mutation_type == 'day':
+                        days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+                        entry['Day'] = random.choice(days)
+                    
+                    elif mutation_type == 'time':
+                        entry['Time Slot'] = random.choice(self.time_slots)
+                    
+                    elif mutation_type == 'room':
+                        if entry['Type'] == 'Lab':
+                            available_rooms = [r for r in self.classrooms if 'Lab' in r]
+                        else:
+                            available_rooms = [r for r in self.classrooms if 'Lab' not in r]
+                        
+                        if available_rooms:
+                            entry['Room'] = random.choice(available_rooms)
+                    
+                    elif mutation_type == 'swap' and len(mutated) > 1:
+                        other_idx = random.randint(0, len(mutated) - 1)
+                        if other_idx != i:
+                            mutated[i], mutated[other_idx] = mutated[other_idx], entry
+                            entry = mutated[i]
+                    
+                    # Update times
                     start_hour = int(entry['Time Slot'].split(':')[0])
                     duration = int(entry['Duration'].split()[0])
                     end_hour = start_hour + duration
@@ -430,6 +430,7 @@ class GeneticAlgorithmTimetable:
         best_individual = None
         best_fitness = 0
         fitness_history = []
+        no_improvement_count = 0
         
         for gen in range(generations):
             # Calculate fitness for all individuals
@@ -442,11 +443,25 @@ class GeneticAlgorithmTimetable:
             if current_best_fitness > best_fitness:
                 best_fitness = current_best_fitness
                 best_individual = population[current_best_idx]
+                no_improvement_count = 0
+            else:
+                no_improvement_count += 1
             
             fitness_history.append(best_fitness)
             
+            # If no improvement for 5+ generations, inject new random solutions
+            if no_improvement_count > 5:
+                # Replace worst 30% with new random individuals (diversity injection)
+                sorted_indices = sorted(range(len(fitness_scores)), 
+                                       key=lambda i: fitness_scores[i])
+                replace_count = max(1, population_size // 3)
+                for i in range(replace_count):
+                    population[sorted_indices[i]] = self.create_individual()
+                no_improvement_count = 0
+                continue
+            
             # SELECTION: Select best parents
-            parents = self.selection(population, fitness_scores, num_parents=4)
+            parents = self.selection(population, fitness_scores, num_parents=6)  # Increased from 4 to 6
             
             # Create new generation
             new_population = [best_individual]  # Keep best (elitism)
@@ -456,7 +471,7 @@ class GeneticAlgorithmTimetable:
                 parent1, parent2 = random.sample(parents, 2)
                 offspring = self.crossover(parent1, parent2)
                 
-                # MUTATION: Mutate offspring
+                # MUTATION: Mutate offspring (aggressive mutation)
                 offspring = self.mutate(offspring)
                 
                 new_population.append(offspring)
