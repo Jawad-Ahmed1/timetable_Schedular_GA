@@ -59,13 +59,16 @@ if st.sidebar.button("🚀 Generate Timetable", key="generate"):
         ga = GeneticAlgorithmTimetable(csv_file="timetable_data.csv")
         timetable, fitness = ga.run(generations=generations, population_size=population_size)
         
+        print(f"DEBUG: Timetable length: {len(timetable) if timetable else 0}")
+        print(f"DEBUG: Fitness value: {fitness}, Type: {type(fitness)}")
+        
         if timetable:
             df_tt = pd.DataFrame(timetable)
             df_tt.to_csv("final_timetable.csv", index=False)
             
             # Store in session state
             st.session_state.df_timetable = df_tt
-            st.session_state.fitness = fitness
+            st.session_state.fitness = float(fitness) if fitness else 0
             st.success("✅ Timetable generated successfully!")
         else:
             st.error("❌ Failed to generate timetable!")
@@ -73,12 +76,7 @@ if st.sidebar.button("🚀 Generate Timetable", key="generate"):
 # Check if timetable exists in session
 if 'df_timetable' in st.session_state:
     df_tt = st.session_state.df_timetable
-    fitness = st.session_state.fitness
-    
-    # Display fitness
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.markdown(f'<div class="fitness-box">Fitness Score: {fitness}</div>', unsafe_allow_html=True)
+    fitness = st.session_state.get('fitness', 'N/A')
     
     # Create tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Daily Schedule", "📚 Subjects", "🏫 By Section", "👨‍🏫 By Faculty", "📥 Download"])
