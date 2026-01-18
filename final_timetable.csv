@@ -1,173 +1,176 @@
 Class,Subject,Faculty,Code,Type,Day,Start Time,End Time,Duration,Time Slot,Room,Total Hours
-BSCS-4A,Data Structures,Dr. Ahmed,CS201,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-108,3
-BSCS-4A,Data Structures,Dr. Ahmed,CS201,Theory,Thursday,12:00,13:00,1 hour,12:00-13:00,Room-109,3
-BSCS-4A,Data Structures,Dr. Ahmed,CS201,Lab,Wednesday,12:00,13:00,1 hour,12:00-13:00,Lab-4,3
-BSCS-4A,Database Lab,Dr. Khan,CS203,Theory,Tuesday,09:00,10:00,1 hour,09:00-10:00,Room-108,1
-BSCS-4A,Algorithms,Dr. Bilal,CS202,Theory,Monday,12:00,14:00,2 hours,12:00-14:00,Room-107,3
-BSCS-4A,Algorithms,Dr. Bilal,CS202,Theory,Friday,12:00,13:00,1 hour,12:00-13:00,Room-103,3
-BSCS-4A,Algorithms,Dr. Bilal,CS202,Lab,Thursday,08:00,09:00,1 hour,08:00-09:00,Lab-5,3
-BSCS-4A,Web Development,Dr. Samina,CS250,Theory,Wednesday,08:00,10:00,2 hours,08:00-10:00,Room-102,3
-BSCS-4A,Web Development,Dr. Samina,CS250,Theory,Friday,09:00,10:00,1 hour,09:00-10:00,Room-105,3
-BSCS-4A,Web Development,Dr. Samina,CS250,Lab,Tuesday,14:00,15:00,1 hour,14:00-15:00,Lab-3,3
-BSCS-4A,Software Testing,Dr. Amal,CS251,Theory,Wednesday,14:00,16:00,2 hours,14:00-16:00,Room-103,2
-BSCS-4B,Operating Systems,Dr. Sara,CS204,Theory,Friday,12:00,14:00,2 hours,12:00-14:00,Room-105,3
-BSCS-4B,Operating Systems,Dr. Sara,CS204,Theory,Tuesday,13:00,14:00,1 hour,13:00-14:00,Room-101,3
-BSCS-4B,Operating Systems,Dr. Sara,CS204,Lab,Wednesday,09:00,10:00,1 hour,09:00-10:00,Lab-2,3
-BSCS-4B,Networking,Dr. Tariq,CS205,Theory,Tuesday,14:00,16:00,2 hours,14:00-16:00,Room-107,2
-BSCS-4B,OS Lab,Dr. Sara,CS206,Theory,Wednesday,12:00,13:00,1 hour,12:00-13:00,Room-106,1
-BSCS-4B,Cybersecurity,Dr. Layla,CS252,Theory,Thursday,13:00,15:00,2 hours,13:00-15:00,Room-102,3
-BSCS-4B,Cybersecurity,Dr. Layla,CS252,Theory,Wednesday,08:00,09:00,1 hour,08:00-09:00,Room-104,3
-BSCS-4B,Cybersecurity,Dr. Layla,CS252,Lab,Monday,13:00,14:00,1 hour,13:00-14:00,Lab-1,3
-BSCS-4B,Security Lab,Dr. Layla,CS253,Theory,Wednesday,13:00,15:00,2 hours,13:00-15:00,Room-104,2
-BSCS-4C,Artificial Intelligence,Dr. Hamid,CS208,Theory,Thursday,10:00,12:00,2 hours,10:00-12:00,Room-103,3
-BSCS-4C,Artificial Intelligence,Dr. Hamid,CS208,Theory,Monday,09:00,10:00,1 hour,09:00-10:00,Room-109,3
-BSCS-4C,Artificial Intelligence,Dr. Hamid,CS208,Lab,Friday,12:00,13:00,1 hour,12:00-13:00,Lab-3,3
-BSCS-4C,ML Lab,Dr. Hamid,CS209,Theory,Wednesday,12:00,13:00,1 hour,12:00-13:00,Room-107,1
-BSCS-4C,Cloud Computing,Dr. Rana,CS254,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-108,3
-BSCS-4C,Cloud Computing,Dr. Rana,CS254,Theory,Tuesday,15:00,16:00,1 hour,15:00-16:00,Room-101,3
-BSCS-4C,Cloud Computing,Dr. Rana,CS254,Lab,Thursday,14:00,15:00,1 hour,14:00-15:00,Lab-1,3
-BSCS-4C,Cloud Lab,Dr. Rana,CS255,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-108,2
-BSCS-4D,Software Engineering,Dr. Aliya,CS210,Theory,Thursday,14:00,16:00,2 hours,14:00-16:00,Room-104,3
-BSCS-4D,Software Engineering,Dr. Aliya,CS210,Theory,Monday,08:00,09:00,1 hour,08:00-09:00,Room-104,3
-BSCS-4D,Software Engineering,Dr. Aliya,CS210,Lab,Tuesday,12:00,13:00,1 hour,12:00-13:00,Lab-3,3
-BSCS-4D,SE Lab,Dr. Aliya,CS211,Theory,Tuesday,14:00,15:00,1 hour,14:00-15:00,Room-106,1
-BSCS-4D,DevOps,Dr. Mazen,CS256,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-110,3
-BSCS-4D,DevOps,Dr. Mazen,CS256,Theory,Wednesday,10:00,11:00,1 hour,10:00-11:00,Room-101,3
-BSCS-4D,DevOps,Dr. Mazen,CS256,Lab,Monday,14:00,15:00,1 hour,14:00-15:00,Lab-5,3
-BSCS-4D,DevOps Lab,Dr. Mazen,CS257,Theory,Friday,12:00,14:00,2 hours,12:00-14:00,Room-108,2
-BSCS-3A,Discrete Mathematics,Dr. Hasan,CS301,Theory,Wednesday,11:00,13:00,2 hours,11:00-13:00,Room-103,3
-BSCS-3A,Discrete Mathematics,Dr. Hasan,CS301,Theory,Monday,10:00,11:00,1 hour,10:00-11:00,Room-108,3
-BSCS-3A,Discrete Mathematics,Dr. Hasan,CS301,Lab,Friday,10:00,11:00,1 hour,10:00-11:00,Lab-2,3
-BSCS-3A,Compiler Design,Dr. Fatima,CS302,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-110,3
-BSCS-3A,Compiler Design,Dr. Fatima,CS302,Theory,Wednesday,09:00,10:00,1 hour,09:00-10:00,Room-101,3
-BSCS-3A,Compiler Design,Dr. Fatima,CS302,Lab,Friday,09:00,10:00,1 hour,09:00-10:00,Lab-5,3
-BSCS-3A,Compiler Lab,Dr. Fatima,CS303,Theory,Friday,08:00,09:00,1 hour,08:00-09:00,Room-103,1
-BSCS-3A,Database Systems,Dr. Imran,CS304,Theory,Thursday,10:00,12:00,2 hours,10:00-12:00,Room-106,3
-BSCS-3A,Database Systems,Dr. Imran,CS304,Theory,Tuesday,13:00,14:00,1 hour,13:00-14:00,Room-107,3
-BSCS-3A,Database Systems,Dr. Imran,CS304,Lab,Monday,12:00,13:00,1 hour,12:00-13:00,Lab-4,3
-BSCS-3A,Database Lab,Dr. Imran,CS305,Theory,Friday,13:00,15:00,2 hours,13:00-15:00,Room-104,2
-BSCS-3B,Computer Architecture,Dr. Aisha,CS310,Theory,Wednesday,11:00,13:00,2 hours,11:00-13:00,Room-109,3
-BSCS-3B,Computer Architecture,Dr. Aisha,CS310,Theory,Friday,14:00,15:00,1 hour,14:00-15:00,Room-101,3
-BSCS-3B,Computer Architecture,Dr. Aisha,CS310,Lab,Monday,15:00,16:00,1 hour,15:00-16:00,Lab-2,3
-BSCS-3B,Graphics Programming,Dr. Waleed,CS311,Theory,Tuesday,08:00,10:00,2 hours,08:00-10:00,Room-104,3
-BSCS-3B,Graphics Programming,Dr. Waleed,CS311,Theory,Friday,15:00,16:00,1 hour,15:00-16:00,Room-105,3
-BSCS-3B,Graphics Programming,Dr. Waleed,CS311,Lab,Monday,08:00,09:00,1 hour,08:00-09:00,Lab-5,3
-BSCS-3B,Graphics Lab,Dr. Waleed,CS312,Theory,Friday,09:00,10:00,1 hour,09:00-10:00,Room-104,1
-BSCS-3B,Numerical Computing,Dr. Nadia,CS313,Theory,Wednesday,09:00,11:00,2 hours,09:00-11:00,Room-108,3
-BSCS-3B,Numerical Computing,Dr. Nadia,CS313,Theory,Tuesday,15:00,16:00,1 hour,15:00-16:00,Room-108,3
-BSCS-3B,Numerical Computing,Dr. Nadia,CS313,Lab,Monday,12:00,13:00,1 hour,12:00-13:00,Lab-1,3
-BSCS-3B,Numerical Lab,Dr. Nadia,CS314,Theory,Thursday,09:00,11:00,2 hours,09:00-11:00,Room-104,2
-BSCS-3C,Game Development,Dr. Samir,CS320,Theory,Tuesday,13:00,15:00,2 hours,13:00-15:00,Room-108,3
-BSCS-3C,Game Development,Dr. Samir,CS320,Theory,Thursday,12:00,13:00,1 hour,12:00-13:00,Room-104,3
-BSCS-3C,Game Development,Dr. Samir,CS320,Lab,Wednesday,10:00,11:00,1 hour,10:00-11:00,Lab-4,3
-BSCS-3C,Game Dev Lab,Dr. Samir,CS321,Theory,Friday,14:00,15:00,1 hour,14:00-15:00,Room-105,1
-BSCS-3C,Network Protocols,Dr. Yaseen,CS322,Theory,Thursday,09:00,11:00,2 hours,09:00-11:00,Room-101,3
-BSCS-3C,Network Protocols,Dr. Yaseen,CS322,Theory,Tuesday,11:00,12:00,1 hour,11:00-12:00,Room-106,3
-BSCS-3C,Network Protocols,Dr. Yaseen,CS322,Lab,Wednesday,09:00,10:00,1 hour,09:00-10:00,Lab-1,3
-BSCS-3C,Network Lab,Dr. Yaseen,CS323,Theory,Monday,12:00,14:00,2 hours,12:00-14:00,Room-102,2
-BSCS-3D,Internet of Things,Dr. Karim,CS330,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-102,3
-BSCS-3D,Internet of Things,Dr. Karim,CS330,Theory,Wednesday,11:00,12:00,1 hour,11:00-12:00,Room-107,3
-BSCS-3D,Internet of Things,Dr. Karim,CS330,Lab,Monday,11:00,12:00,1 hour,11:00-12:00,Lab-3,3
-BSCS-3D,IoT Lab,Dr. Karim,CS331,Theory,Friday,11:00,12:00,1 hour,11:00-12:00,Room-110,1
-BSCS-3D,Big Data Analytics,Dr. Dina,CS332,Theory,Tuesday,10:00,12:00,2 hours,10:00-12:00,Room-107,3
-BSCS-3D,Big Data Analytics,Dr. Dina,CS332,Theory,Friday,13:00,14:00,1 hour,13:00-14:00,Room-110,3
-BSCS-3D,Big Data Analytics,Dr. Dina,CS332,Lab,Monday,10:00,11:00,1 hour,10:00-11:00,Lab-5,3
-BSCS-3D,Big Data Lab,Dr. Dina,CS333,Theory,Wednesday,13:00,15:00,2 hours,13:00-15:00,Room-110,2
-BSCS-2A,Linear Algebra,Dr. Rashid,CS401,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-103,3
-BSCS-2A,Linear Algebra,Dr. Rashid,CS401,Theory,Wednesday,15:00,16:00,1 hour,15:00-16:00,Room-102,3
-BSCS-2A,Linear Algebra,Dr. Rashid,CS401,Lab,Tuesday,15:00,16:00,1 hour,15:00-16:00,Lab-2,3
-BSCS-2A,Calculus II,Dr. Leila,CS402,Theory,Friday,12:00,14:00,2 hours,12:00-14:00,Room-107,3
-BSCS-2A,Calculus II,Dr. Leila,CS402,Theory,Thursday,11:00,12:00,1 hour,11:00-12:00,Room-102,3
-BSCS-2A,Calculus II,Dr. Leila,CS402,Lab,Wednesday,14:00,15:00,1 hour,14:00-15:00,Lab-4,3
-BSCS-2A,Data Analysis,Dr. Mustafa,CS403,Theory,Monday,12:00,14:00,2 hours,12:00-14:00,Room-106,2
-BSCS-2A,Probability Statistics,Dr. Leila,CS404,Theory,Wednesday,08:00,10:00,2 hours,08:00-10:00,Room-105,3
-BSCS-2A,Probability Statistics,Dr. Leila,CS404,Theory,Thursday,10:00,11:00,1 hour,10:00-11:00,Room-110,3
-BSCS-2A,Probability Statistics,Dr. Leila,CS404,Lab,Tuesday,12:00,13:00,1 hour,12:00-13:00,Lab-5,3
-BSCS-2B,Web Technologies,Dr. Zainab,CS410,Theory,Tuesday,10:00,12:00,2 hours,10:00-12:00,Room-103,3
-BSCS-2B,Web Technologies,Dr. Zainab,CS410,Theory,Thursday,08:00,09:00,1 hour,08:00-09:00,Room-108,3
-BSCS-2B,Web Technologies,Dr. Zainab,CS410,Lab,Monday,11:00,12:00,1 hour,11:00-12:00,Lab-1,3
-BSCS-2B,Mobile Development,Dr. Hassan,CS411,Theory,Friday,11:00,13:00,2 hours,11:00-13:00,Room-109,3
-BSCS-2B,Mobile Development,Dr. Hassan,CS411,Theory,Monday,14:00,15:00,1 hour,14:00-15:00,Room-104,3
-BSCS-2B,Mobile Development,Dr. Hassan,CS411,Lab,Thursday,11:00,12:00,1 hour,11:00-12:00,Lab-3,3
-BSCS-2B,Mobile Lab,Dr. Hassan,CS412,Theory,Thursday,10:00,11:00,1 hour,10:00-11:00,Room-108,1
-BSCS-2B,Web Design,Dr. Zainab,CS413,Theory,Wednesday,10:00,12:00,2 hours,10:00-12:00,Room-110,2
-BSCS-2C,Advanced Databases,Dr. Imran,CS420,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-106,3
-BSCS-2C,Advanced Databases,Dr. Imran,CS420,Theory,Tuesday,10:00,11:00,1 hour,10:00-11:00,Room-105,3
-BSCS-2C,Advanced Databases,Dr. Imran,CS420,Lab,Wednesday,12:00,13:00,1 hour,12:00-13:00,Lab-3,3
-BSCS-2C,Database Admin,Dr. Imran,CS421,Theory,Monday,09:00,11:00,2 hours,09:00-11:00,Room-103,2
-BSCS-2C,System Design,Dr. Jamal,CS422,Theory,Tuesday,14:00,16:00,2 hours,14:00-16:00,Room-102,3
-BSCS-2C,System Design,Dr. Jamal,CS422,Theory,Monday,13:00,14:00,1 hour,13:00-14:00,Room-103,3
-BSCS-2C,System Design,Dr. Jamal,CS422,Lab,Thursday,11:00,12:00,1 hour,11:00-12:00,Lab-1,3
-BSCS-2C,Design Project,Dr. Jamal,CS423,Theory,Thursday,12:00,13:00,1 hour,12:00-13:00,Room-105,1
-BSCS-2D,Object Oriented Programming,Dr. Jalal,CS430,Theory,Tuesday,08:00,10:00,2 hours,08:00-10:00,Room-105,3
-BSCS-2D,Object Oriented Programming,Dr. Jalal,CS430,Theory,Thursday,10:00,11:00,1 hour,10:00-11:00,Room-102,3
-BSCS-2D,Object Oriented Programming,Dr. Jalal,CS430,Lab,Wednesday,15:00,16:00,1 hour,15:00-16:00,Lab-3,3
-BSCS-2D,OOP Lab,Dr. Jalal,CS431,Theory,Wednesday,11:00,13:00,2 hours,11:00-13:00,Room-102,2
-BSCS-2D,Advanced Python,Dr. Sana,CS432,Theory,Wednesday,09:00,11:00,2 hours,09:00-11:00,Room-109,3
-BSCS-2D,Advanced Python,Dr. Sana,CS432,Theory,Friday,09:00,10:00,1 hour,09:00-10:00,Room-102,3
-BSCS-2D,Advanced Python,Dr. Sana,CS432,Lab,Monday,12:00,13:00,1 hour,12:00-13:00,Lab-5,3
-BSCS-2D,Python Lab,Dr. Sana,CS433,Theory,Monday,15:00,16:00,1 hour,15:00-16:00,Room-101,1
-BSCS-1A,Introduction to CS,Dr. Saad,CS501,Theory,Tuesday,12:00,14:00,2 hours,12:00-14:00,Room-106,3
-BSCS-1A,Introduction to CS,Dr. Saad,CS501,Theory,Monday,13:00,14:00,1 hour,13:00-14:00,Room-101,3
-BSCS-1A,Introduction to CS,Dr. Saad,CS501,Lab,Friday,15:00,16:00,1 hour,15:00-16:00,Lab-2,3
-BSCS-1A,Programming I,Dr. Jalal,CS502,Theory,Tuesday,10:00,12:00,2 hours,10:00-12:00,Room-102,3
-BSCS-1A,Programming I,Dr. Jalal,CS502,Theory,Wednesday,14:00,15:00,1 hour,14:00-15:00,Room-106,3
-BSCS-1A,Programming I,Dr. Jalal,CS502,Lab,Friday,08:00,09:00,1 hour,08:00-09:00,Lab-4,3
-BSCS-1A,Programming Lab I,Dr. Jalal,CS503,Theory,Friday,14:00,15:00,1 hour,14:00-15:00,Room-106,1
-BSCS-1A,Digital Literacy,Dr. Noor,CS504,Theory,Monday,09:00,11:00,2 hours,09:00-11:00,Room-102,2
-BSCS-1B,Digital Logic,Dr. Reem,CS510,Theory,Wednesday,13:00,15:00,2 hours,13:00-15:00,Room-102,3
-BSCS-1B,Digital Logic,Dr. Reem,CS510,Theory,Tuesday,10:00,11:00,1 hour,10:00-11:00,Room-108,3
-BSCS-1B,Digital Logic,Dr. Reem,CS510,Lab,Friday,08:00,09:00,1 hour,08:00-09:00,Lab-3,3
-BSCS-1B,Math for CS I,Dr. Tariq,CS511,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-107,3
-BSCS-1B,Math for CS I,Dr. Tariq,CS511,Theory,Tuesday,08:00,09:00,1 hour,08:00-09:00,Room-102,3
-BSCS-1B,Math for CS I,Dr. Tariq,CS511,Lab,Wednesday,10:00,11:00,1 hour,10:00-11:00,Lab-5,3
-BSCS-1B,CS Lab,Dr. Reem,CS512,Theory,Wednesday,15:00,16:00,1 hour,15:00-16:00,Room-109,1
-BSCS-1B,Electronics Basics,Dr. Wael,CS513,Theory,Monday,09:00,11:00,2 hours,09:00-11:00,Room-101,2
-BSCS-1C,English for CS,Dr. Noor,CS520,Theory,Tuesday,10:00,12:00,2 hours,10:00-12:00,Room-109,2
-BSCS-1C,Intro to Databases,Dr. Imran,CS521,Theory,Thursday,13:00,15:00,2 hours,13:00-15:00,Room-106,3
-BSCS-1C,Intro to Databases,Dr. Imran,CS521,Theory,Friday,08:00,09:00,1 hour,08:00-09:00,Room-109,3
-BSCS-1C,Intro to Databases,Dr. Imran,CS521,Lab,Tuesday,14:00,15:00,1 hour,14:00-15:00,Lab-5,3
-BSCS-1C,Database Lab,Dr. Imran,CS522,Theory,Thursday,09:00,10:00,1 hour,09:00-10:00,Room-107,1
-BSCS-1C,Logic and Algorithms,Dr. Hasan,CS523,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-102,3
-BSCS-1C,Logic and Algorithms,Dr. Hasan,CS523,Theory,Thursday,10:00,11:00,1 hour,10:00-11:00,Room-109,3
-BSCS-1C,Logic and Algorithms,Dr. Hasan,CS523,Lab,Friday,13:00,14:00,1 hour,13:00-14:00,Lab-3,3
-BSCS-1D,Physics I,Dr. Wael,CS530,Theory,Thursday,08:00,10:00,2 hours,08:00-10:00,Room-103,3
-BSCS-1D,Physics I,Dr. Wael,CS530,Theory,Friday,12:00,13:00,1 hour,12:00-13:00,Room-106,3
-BSCS-1D,Physics I,Dr. Wael,CS530,Lab,Wednesday,11:00,12:00,1 hour,11:00-12:00,Lab-5,3
-BSCS-1D,Programming II,Dr. Sana,CS531,Theory,Thursday,13:00,15:00,2 hours,13:00-15:00,Room-107,3
-BSCS-1D,Programming II,Dr. Sana,CS531,Theory,Monday,13:00,14:00,1 hour,13:00-14:00,Room-104,3
-BSCS-1D,Programming II,Dr. Sana,CS531,Lab,Wednesday,08:00,09:00,1 hour,08:00-09:00,Lab-3,3
-BSCS-1D,Programming Lab II,Dr. Sana,CS532,Theory,Tuesday,12:00,13:00,1 hour,12:00-13:00,Room-109,1
-BSCS-1D,Problem Solving,Dr. Saad,CS533,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-107,2
-SE-4A,Software Testing,Dr. Amal,SE201,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-105,3
-SE-4A,Software Testing,Dr. Amal,SE201,Theory,Tuesday,10:00,11:00,1 hour,10:00-11:00,Room-104,3
-SE-4A,Software Testing,Dr. Amal,SE201,Lab,Wednesday,08:00,09:00,1 hour,08:00-09:00,Lab-1,3
-SE-4A,Testing Lab,Dr. Amal,SE202,Theory,Monday,09:00,10:00,1 hour,09:00-10:00,Room-107,1
-SE-4A,Software Maintenance,Dr. Helia,SE203,Theory,Wednesday,14:00,16:00,2 hours,14:00-16:00,Room-108,3
-SE-4A,Software Maintenance,Dr. Helia,SE203,Theory,Monday,10:00,11:00,1 hour,10:00-11:00,Room-110,3
-SE-4A,Software Maintenance,Dr. Helia,SE203,Lab,Friday,08:00,09:00,1 hour,08:00-09:00,Lab-1,3
-SE-4A,Quality Metrics,Dr. Helia,SE204,Theory,Tuesday,13:00,15:00,2 hours,13:00-15:00,Room-105,2
-SE-4B,Requirements Analysis,Dr. Aziz,SE210,Theory,Wednesday,13:00,15:00,2 hours,13:00-15:00,Room-107,3
-SE-4B,Requirements Analysis,Dr. Aziz,SE210,Theory,Friday,08:00,09:00,1 hour,08:00-09:00,Room-106,3
-SE-4B,Requirements Analysis,Dr. Aziz,SE210,Lab,Tuesday,11:00,12:00,1 hour,11:00-12:00,Lab-2,3
-SE-4B,Design Patterns,Dr. Aziz,SE211,Theory,Thursday,14:00,16:00,2 hours,14:00-16:00,Room-103,3
-SE-4B,Design Patterns,Dr. Aziz,SE211,Theory,Tuesday,12:00,13:00,1 hour,12:00-13:00,Room-103,3
-SE-4B,Design Patterns,Dr. Aziz,SE211,Lab,Wednesday,11:00,12:00,1 hour,11:00-12:00,Lab-4,3
-SE-4B,Design Lab,Dr. Aziz,SE212,Theory,Monday,12:00,13:00,1 hour,12:00-13:00,Room-103,1
-SE-4B,Software Verification,Dr. Sinan,SE213,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-109,2
-SE-3A,Project Management,Dr. Jamal,SE301,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-103,3
-SE-3A,Project Management,Dr. Jamal,SE301,Theory,Wednesday,11:00,12:00,1 hour,11:00-12:00,Room-101,3
-SE-3A,Project Management,Dr. Jamal,SE301,Lab,Thursday,10:00,11:00,1 hour,10:00-11:00,Lab-2,3
-SE-3A,Agile Methods,Dr. Maha,SE302,Theory,Tuesday,09:00,11:00,2 hours,09:00-11:00,Room-101,3
-SE-3A,Agile Methods,Dr. Maha,SE302,Theory,Wednesday,08:00,09:00,1 hour,08:00-09:00,Room-108,3
-SE-3A,Agile Methods,Dr. Maha,SE302,Lab,Thursday,15:00,16:00,1 hour,15:00-16:00,Lab-1,3
-SE-3A,Agile Lab,Dr. Maha,SE303,Theory,Tuesday,11:00,12:00,1 hour,11:00-12:00,Room-104,1
-SE-3A,Risk Management,Dr. Jamal,SE304,Theory,Tuesday,12:00,14:00,2 hours,12:00-14:00,Room-110,2
-SE-3B,Quality Assurance,Dr. Sinan,SE310,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-105,3
-SE-3B,Quality Assurance,Dr. Sinan,SE310,Theory,Thursday,08:00,09:00,1 hour,08:00-09:00,Room-102,3
-SE-3B,Quality Assurance,Dr. Sinan,SE310,Lab,Wednesday,12:00,13:00,1 hour,12:00-13:00,Lab-5,3
-SE-3B,QA Lab,Dr. Sinan,SE311,Theory,Tuesday,12:00,13:00,1 hour,12:00-13:00,Room-107,1
-SE-3B,Performance Testing,Dr. Yasmin,SE312,Theory,Wednesday,08:00,10:00,2 hours,08:00-10:00,Room-110,3
-SE-3B,Performance Testing,Dr. Yasmin,SE312,Theory,Friday,10:00,11:00,1 hour,10:00-11:00,Room-102,3
-SE-3B,Performance Testing,Dr. Yasmin,SE312,Lab,Monday,14:00,15:00,1 hour,14:00-15:00,Lab-4,3
-SE-3B,Performance Lab,Dr. Yasmin,SE313,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-108,2
+BSCS-4A,Data Structures,Dr. Ahmed,CS201,Theory,Friday,13:00,15:00,2 hours,13:00-15:00,Room-105,3
+BSCS-4A,Data Structures,Dr. Ahmed,CS201,Theory,Monday,10:00,11:00,1 hour,10:00-11:00,Room-102,3
+BSCS-4A,Data Structures,Dr. Ahmed,CS201,Lab,Wednesday,09:00,10:00,1 hour,09:00-10:00,Lab-5,3
+BSCS-4A,Database Lab,Dr. Khan,CS203,Theory,Thursday,12:00,13:00,1 hour,12:00-13:00,Room-106,1
+BSCS-4A,Algorithms,Dr. Bilal,CS202,Theory,Wednesday,10:00,12:00,2 hours,10:00-12:00,Room-108,3
+BSCS-4A,Algorithms,Dr. Bilal,CS202,Theory,Tuesday,09:00,10:00,1 hour,09:00-10:00,Room-108,3
+BSCS-4A,Algorithms,Dr. Bilal,CS202,Lab,Thursday,11:00,12:00,1 hour,11:00-12:00,Lab-5,3
+BSCS-4A,Web Development,Dr. Samina,CS250,Theory,Thursday,09:00,11:00,2 hours,09:00-11:00,Room-108,3
+BSCS-4A,Web Development,Dr. Samina,CS250,Theory,Friday,08:00,09:00,1 hour,08:00-09:00,Room-109,3
+BSCS-4A,Web Development,Dr. Samina,CS250,Lab,Monday,08:00,09:00,1 hour,08:00-09:00,Lab-2,3
+BSCS-4A,Software Testing,Dr. Amal,CS251,Theory,Thursday,14:00,16:00,2 hours,14:00-16:00,Room-107,2
+BSCS-4B,Operating Systems,Dr. Sara,CS204,Theory,Tuesday,10:00,12:00,2 hours,10:00-12:00,Room-105,3
+BSCS-4B,Operating Systems,Dr. Sara,CS204,Theory,Wednesday,13:00,14:00,1 hour,13:00-14:00,Room-104,3
+BSCS-4B,Operating Systems,Dr. Sara,CS204,Lab,Friday,08:00,09:00,1 hour,08:00-09:00,Lab-3,3
+BSCS-4B,Networking,Dr. Tariq,CS205,Theory,Tuesday,13:00,15:00,2 hours,13:00-15:00,Room-103,2
+BSCS-4B,OS Lab,Dr. Sara,CS206,Theory,Thursday,12:00,13:00,1 hour,12:00-13:00,Room-104,1
+BSCS-4B,Cybersecurity,Dr. Layla,CS252,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-103,3
+BSCS-4B,Cybersecurity,Dr. Layla,CS252,Theory,Monday,11:00,12:00,1 hour,11:00-12:00,Room-110,3
+BSCS-4B,Cybersecurity,Dr. Layla,CS252,Lab,Tuesday,08:00,09:00,1 hour,08:00-09:00,Lab-1,3
+BSCS-4B,Security Lab,Dr. Layla,CS253,Theory,Wednesday,10:00,12:00,2 hours,10:00-12:00,Room-102,2
+BSCS-4C,Artificial Intelligence,Dr. Hamid,CS208,Theory,Wednesday,13:00,15:00,2 hours,13:00-15:00,Room-107,3
+BSCS-4C,Artificial Intelligence,Dr. Hamid,CS208,Theory,Tuesday,15:00,16:00,1 hour,15:00-16:00,Room-108,3
+BSCS-4C,Artificial Intelligence,Dr. Hamid,CS208,Lab,Monday,11:00,12:00,1 hour,11:00-12:00,Lab-5,3
+BSCS-4C,ML Lab,Dr. Hamid,CS209,Theory,Thursday,15:00,16:00,1 hour,15:00-16:00,Room-108,1
+BSCS-4C,Cloud Computing,Dr. Rana,CS254,Theory,Tuesday,09:00,11:00,2 hours,09:00-11:00,Room-110,3
+BSCS-4C,Cloud Computing,Dr. Rana,CS254,Theory,Monday,10:00,11:00,1 hour,10:00-11:00,Room-101,3
+BSCS-4C,Cloud Computing,Dr. Rana,CS254,Lab,Friday,09:00,10:00,1 hour,09:00-10:00,Lab-3,3
+BSCS-4C,Cloud Lab,Dr. Rana,CS255,Theory,Thursday,10:00,12:00,2 hours,10:00-12:00,Room-102,2
+BSCS-4D,Software Engineering,Dr. Aliya,CS210,Theory,Monday,12:00,14:00,2 hours,12:00-14:00,Room-102,3
+BSCS-4D,Software Engineering,Dr. Aliya,CS210,Theory,Friday,15:00,16:00,1 hour,15:00-16:00,Room-110,3
+BSCS-4D,Software Engineering,Dr. Aliya,CS210,Lab,Wednesday,12:00,13:00,1 hour,12:00-13:00,Lab-4,3
+BSCS-4D,SE Lab,Dr. Aliya,CS211,Theory,Tuesday,10:00,11:00,1 hour,10:00-11:00,Room-106,1
+BSCS-4D,DevOps,Dr. Mazen,CS256,Theory,Tuesday,08:00,10:00,2 hours,08:00-10:00,Room-105,3
+BSCS-4D,DevOps,Dr. Mazen,CS256,Theory,Thursday,15:00,16:00,1 hour,15:00-16:00,Room-102,3
+BSCS-4D,DevOps,Dr. Mazen,CS256,Lab,Friday,09:00,10:00,1 hour,09:00-10:00,Lab-5,3
+BSCS-4D,DevOps Lab,Dr. Mazen,CS257,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-105,2
+BSCS-3A,Discrete Mathematics,Dr. Hasan,CS301,Theory,Wednesday,14:00,16:00,2 hours,14:00-16:00,Room-102,3
+BSCS-3A,Discrete Mathematics,Dr. Hasan,CS301,Theory,Friday,15:00,16:00,1 hour,15:00-16:00,Room-108,3
+BSCS-3A,Discrete Mathematics,Dr. Hasan,CS301,Lab,Thursday,14:00,15:00,1 hour,14:00-15:00,Lab-2,3
+BSCS-3A,Compiler Design,Dr. Fatima,CS302,Theory,Thursday,09:00,11:00,2 hours,09:00-11:00,Room-103,3
+BSCS-3A,Compiler Design,Dr. Fatima,CS302,Theory,Tuesday,15:00,16:00,1 hour,15:00-16:00,Room-106,3
+BSCS-3A,Compiler Design,Dr. Fatima,CS302,Lab,Friday,14:00,15:00,1 hour,14:00-15:00,Lab-3,3
+BSCS-3A,Compiler Lab,Dr. Fatima,CS303,Theory,Monday,15:00,16:00,1 hour,15:00-16:00,Room-106,1
+BSCS-3A,Database Systems,Dr. Imran,CS304,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-102,3
+BSCS-3A,Database Systems,Dr. Imran,CS304,Theory,Monday,11:00,12:00,1 hour,11:00-12:00,Room-109,3
+BSCS-3A,Database Systems,Dr. Imran,CS304,Lab,Tuesday,12:00,13:00,1 hour,12:00-13:00,Lab-2,3
+BSCS-3A,Database Lab,Dr. Imran,CS305,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-102,2
+BSCS-3B,Computer Architecture,Dr. Aisha,CS310,Theory,Wednesday,12:00,14:00,2 hours,12:00-14:00,Room-103,3
+BSCS-3B,Computer Architecture,Dr. Aisha,CS310,Theory,Friday,08:00,09:00,1 hour,08:00-09:00,Room-105,3
+BSCS-3B,Computer Architecture,Dr. Aisha,CS310,Lab,Monday,09:00,10:00,1 hour,09:00-10:00,Lab-3,3
+BSCS-3B,Graphics Programming,Dr. Waleed,CS311,Theory,Friday,11:00,13:00,2 hours,11:00-13:00,Room-104,3
+BSCS-3B,Graphics Programming,Dr. Waleed,CS311,Theory,Tuesday,10:00,11:00,1 hour,10:00-11:00,Room-104,3
+BSCS-3B,Graphics Programming,Dr. Waleed,CS311,Lab,Thursday,08:00,09:00,1 hour,08:00-09:00,Lab-5,3
+BSCS-3B,Graphics Lab,Dr. Waleed,CS312,Theory,Tuesday,11:00,12:00,1 hour,11:00-12:00,Room-106,1
+BSCS-3B,Numerical Computing,Dr. Nadia,CS313,Theory,Wednesday,09:00,11:00,2 hours,09:00-11:00,Room-105,3
+BSCS-3B,Numerical Computing,Dr. Nadia,CS313,Theory,Tuesday,09:00,10:00,1 hour,09:00-10:00,Room-102,3
+BSCS-3B,Numerical Computing,Dr. Nadia,CS313,Lab,Thursday,09:00,10:00,1 hour,09:00-10:00,Lab-2,3
+BSCS-3B,Numerical Lab,Dr. Nadia,CS314,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-109,2
+BSCS-3C,Game Development,Dr. Samir,CS320,Theory,Monday,10:00,12:00,2 hours,10:00-12:00,Room-105,3
+BSCS-3C,Game Development,Dr. Samir,CS320,Theory,Thursday,14:00,15:00,1 hour,14:00-15:00,Room-103,3
+BSCS-3C,Game Development,Dr. Samir,CS320,Lab,Friday,10:00,11:00,1 hour,10:00-11:00,Lab-1,3
+BSCS-3C,Game Dev Lab,Dr. Samir,CS321,Theory,Monday,15:00,16:00,1 hour,15:00-16:00,Room-108,1
+BSCS-3C,Network Protocols,Dr. Yaseen,CS322,Theory,Tuesday,12:00,14:00,2 hours,12:00-14:00,Room-109,3
+BSCS-3C,Network Protocols,Dr. Yaseen,CS322,Theory,Thursday,09:00,10:00,1 hour,09:00-10:00,Room-107,3
+BSCS-3C,Network Protocols,Dr. Yaseen,CS322,Lab,Friday,13:00,14:00,1 hour,13:00-14:00,Lab-3,3
+BSCS-3C,Network Lab,Dr. Yaseen,CS323,Theory,Monday,12:00,14:00,2 hours,12:00-14:00,Room-101,2
+BSCS-3D,Internet of Things,Dr. Karim,CS330,Theory,Thursday,13:00,15:00,2 hours,13:00-15:00,Room-110,3
+BSCS-3D,Internet of Things,Dr. Karim,CS330,Theory,Tuesday,12:00,13:00,1 hour,12:00-13:00,Room-107,3
+BSCS-3D,Internet of Things,Dr. Karim,CS330,Lab,Wednesday,08:00,09:00,1 hour,08:00-09:00,Lab-3,3
+BSCS-3D,IoT Lab,Dr. Karim,CS331,Theory,Friday,08:00,09:00,1 hour,08:00-09:00,Room-104,1
+BSCS-3D,Big Data Analytics,Dr. Dina,CS332,Theory,Friday,11:00,13:00,2 hours,11:00-13:00,Room-107,3
+BSCS-3D,Big Data Analytics,Dr. Dina,CS332,Theory,Tuesday,08:00,09:00,1 hour,08:00-09:00,Room-106,3
+BSCS-3D,Big Data Analytics,Dr. Dina,CS332,Lab,Wednesday,12:00,13:00,1 hour,12:00-13:00,Lab-5,3
+BSCS-3D,Big Data Lab,Dr. Dina,CS333,Theory,Friday,13:00,15:00,2 hours,13:00-15:00,Room-107,2
+BSCS-2A,Linear Algebra,Dr. Rashid,CS401,Theory,Wednesday,08:00,10:00,2 hours,08:00-10:00,Room-110,3
+BSCS-2A,Linear Algebra,Dr. Rashid,CS401,Theory,Thursday,08:00,09:00,1 hour,08:00-09:00,Room-101,3
+BSCS-2A,Linear Algebra,Dr. Rashid,CS401,Lab,Monday,12:00,13:00,1 hour,12:00-13:00,Lab-4,3
+BSCS-2A,Calculus II,Dr. Leila,CS402,Theory,Friday,12:00,14:00,2 hours,12:00-14:00,Room-110,3
+BSCS-2A,Calculus II,Dr. Leila,CS402,Theory,Monday,15:00,16:00,1 hour,15:00-16:00,Room-101,3
+BSCS-2A,Calculus II,Dr. Leila,CS402,Lab,Thursday,11:00,12:00,1 hour,11:00-12:00,Lab-3,3
+BSCS-2A,Data Analysis,Dr. Mustafa,CS403,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-103,2
+BSCS-2A,Probability Statistics,Dr. Leila,CS404,Theory,Wednesday,10:00,12:00,2 hours,10:00-12:00,Room-104,3
+BSCS-2A,Probability Statistics,Dr. Leila,CS404,Theory,Tuesday,13:00,14:00,1 hour,13:00-14:00,Room-108,3
+BSCS-2A,Probability Statistics,Dr. Leila,CS404,Lab,Monday,14:00,15:00,1 hour,14:00-15:00,Lab-5,3
+BSCS-2B,Web Technologies,Dr. Zainab,CS410,Theory,Friday,12:00,14:00,2 hours,12:00-14:00,Room-106,3
+BSCS-2B,Web Technologies,Dr. Zainab,CS410,Theory,Thursday,14:00,15:00,1 hour,14:00-15:00,Room-104,3
+BSCS-2B,Web Technologies,Dr. Zainab,CS410,Lab,Monday,10:00,11:00,1 hour,10:00-11:00,Lab-1,3
+BSCS-2B,Mobile Development,Dr. Hassan,CS411,Theory,Wednesday,14:00,16:00,2 hours,14:00-16:00,Room-104,3
+BSCS-2B,Mobile Development,Dr. Hassan,CS411,Theory,Tuesday,13:00,14:00,1 hour,13:00-14:00,Room-101,3
+BSCS-2B,Mobile Development,Dr. Hassan,CS411,Lab,Monday,15:00,16:00,1 hour,15:00-16:00,Lab-4,3
+BSCS-2B,Mobile Lab,Dr. Hassan,CS412,Theory,Thursday,15:00,16:00,1 hour,15:00-16:00,Room-105,1
+BSCS-2B,Web Design,Dr. Zainab,CS413,Theory,Thursday,11:00,13:00,2 hours,11:00-13:00,Room-103,2
+BSCS-2C,Advanced Databases,Dr. Imran,CS420,Theory,Friday,12:00,14:00,2 hours,12:00-14:00,Room-103,3
+BSCS-2C,Advanced Databases,Dr. Imran,CS420,Theory,Thursday,12:00,13:00,1 hour,12:00-13:00,Room-102,3
+BSCS-2C,Advanced Databases,Dr. Imran,CS420,Lab,Tuesday,14:00,15:00,1 hour,14:00-15:00,Lab-1,3
+BSCS-2C,Database Admin,Dr. Imran,CS421,Theory,Friday,14:00,16:00,2 hours,14:00-16:00,Room-102,2
+BSCS-2C,System Design,Dr. Jamal,CS422,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-105,3
+BSCS-2C,System Design,Dr. Jamal,CS422,Theory,Monday,11:00,12:00,1 hour,11:00-12:00,Room-104,3
+BSCS-2C,System Design,Dr. Jamal,CS422,Lab,Tuesday,08:00,09:00,1 hour,08:00-09:00,Lab-5,3
+BSCS-2C,Design Project,Dr. Jamal,CS423,Theory,Wednesday,14:00,15:00,1 hour,14:00-15:00,Room-101,1
+BSCS-2D,Object Oriented Programming,Dr. Jalal,CS430,Theory,Tuesday,09:00,11:00,2 hours,09:00-11:00,Room-109,3
+BSCS-2D,Object Oriented Programming,Dr. Jalal,CS430,Theory,Wednesday,12:00,13:00,1 hour,12:00-13:00,Room-105,3
+BSCS-2D,Object Oriented Programming,Dr. Jalal,CS430,Lab,Friday,11:00,12:00,1 hour,11:00-12:00,Lab-3,3
+BSCS-2D,OOP Lab,Dr. Jalal,CS431,Theory,Wednesday,10:00,12:00,2 hours,10:00-12:00,Room-110,2
+BSCS-2D,Advanced Python,Dr. Sana,CS432,Theory,Wednesday,08:00,10:00,2 hours,08:00-10:00,Room-103,3
+BSCS-2D,Advanced Python,Dr. Sana,CS432,Theory,Monday,09:00,10:00,1 hour,09:00-10:00,Room-106,3
+BSCS-2D,Advanced Python,Dr. Sana,CS432,Lab,Friday,12:00,13:00,1 hour,12:00-13:00,Lab-1,3
+BSCS-2D,Python Lab,Dr. Sana,CS433,Theory,Thursday,08:00,09:00,1 hour,08:00-09:00,Room-107,1
+BSCS-1A,Introduction to CS,Dr. Saad,CS501,Theory,Thursday,12:00,14:00,2 hours,12:00-14:00,Room-101,3
+BSCS-1A,Introduction to CS,Dr. Saad,CS501,Theory,Tuesday,14:00,15:00,1 hour,14:00-15:00,Room-101,3
+BSCS-1A,Introduction to CS,Dr. Saad,CS501,Lab,Wednesday,12:00,13:00,1 hour,12:00-13:00,Lab-2,3
+BSCS-1A,Programming I,Dr. Jalal,CS502,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-101,3
+BSCS-1A,Programming I,Dr. Jalal,CS502,Theory,Thursday,09:00,10:00,1 hour,09:00-10:00,Room-106,3
+BSCS-1A,Programming I,Dr. Jalal,CS502,Lab,Wednesday,14:00,15:00,1 hour,14:00-15:00,Lab-4,3
+BSCS-1A,Programming Lab I,Dr. Jalal,CS503,Theory,Tuesday,13:00,14:00,1 hour,13:00-14:00,Room-105,1
+BSCS-1A,Digital Literacy,Dr. Noor,CS504,Theory,Wednesday,10:00,12:00,2 hours,10:00-12:00,Room-101,2
+BSCS-1B,Digital Logic,Dr. Reem,CS510,Theory,Friday,11:00,13:00,2 hours,11:00-13:00,Room-109,3
+BSCS-1B,Digital Logic,Dr. Reem,CS510,Theory,Monday,10:00,11:00,1 hour,10:00-11:00,Room-107,3
+BSCS-1B,Digital Logic,Dr. Reem,CS510,Lab,Wednesday,10:00,11:00,1 hour,10:00-11:00,Lab-3,3
+BSCS-1B,Math for CS I,Dr. Tariq,CS511,Theory,Thursday,10:00,12:00,2 hours,10:00-12:00,Room-109,3
+BSCS-1B,Math for CS I,Dr. Tariq,CS511,Theory,Friday,09:00,10:00,1 hour,09:00-10:00,Room-110,3
+BSCS-1B,Math for CS I,Dr. Tariq,CS511,Lab,Wednesday,13:00,14:00,1 hour,13:00-14:00,Lab-4,3
+BSCS-1B,CS Lab,Dr. Reem,CS512,Theory,Tuesday,12:00,13:00,1 hour,12:00-13:00,Room-108,1
+BSCS-1B,Electronics Basics,Dr. Wael,CS513,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-109,2
+BSCS-1C,English for CS,Dr. Noor,CS520,Theory,Monday,12:00,14:00,2 hours,12:00-14:00,Room-108,2
+BSCS-1C,Intro to Databases,Dr. Imran,CS521,Theory,Wednesday,13:00,15:00,2 hours,13:00-15:00,Room-110,3
+BSCS-1C,Intro to Databases,Dr. Imran,CS521,Theory,Monday,10:00,11:00,1 hour,10:00-11:00,Room-108,3
+BSCS-1C,Intro to Databases,Dr. Imran,CS521,Lab,Tuesday,09:00,10:00,1 hour,09:00-10:00,Lab-2,3
+BSCS-1C,Database Lab,Dr. Imran,CS522,Theory,Tuesday,15:00,16:00,1 hour,15:00-16:00,Room-102,1
+BSCS-1C,Logic and Algorithms,Dr. Hasan,CS523,Theory,Thursday,08:00,10:00,2 hours,08:00-10:00,Room-110,3
+BSCS-1C,Logic and Algorithms,Dr. Hasan,CS523,Theory,Tuesday,14:00,15:00,1 hour,14:00-15:00,Room-104,3
+BSCS-1C,Logic and Algorithms,Dr. Hasan,CS523,Lab,Wednesday,11:00,12:00,1 hour,11:00-12:00,Lab-1,3
+BSCS-1D,Physics I,Dr. Wael,CS530,Theory,Monday,10:00,12:00,2 hours,10:00-12:00,Room-103,3
+BSCS-1D,Physics I,Dr. Wael,CS530,Theory,Wednesday,12:00,13:00,1 hour,12:00-13:00,Room-107,3
+BSCS-1D,Physics I,Dr. Wael,CS530,Lab,Tuesday,15:00,16:00,1 hour,15:00-16:00,Lab-5,3
+BSCS-1D,Programming II,Dr. Sana,CS531,Theory,Thursday,11:00,13:00,2 hours,11:00-13:00,Room-105,3
+BSCS-1D,Programming II,Dr. Sana,CS531,Theory,Monday,14:00,15:00,1 hour,14:00-15:00,Room-105,3
+BSCS-1D,Programming II,Dr. Sana,CS531,Lab,Wednesday,14:00,15:00,1 hour,14:00-15:00,Lab-2,3
+BSCS-1D,Programming Lab II,Dr. Sana,CS532,Theory,Tuesday,09:00,10:00,1 hour,09:00-10:00,Room-106,1
+BSCS-1D,Problem Solving,Dr. Saad,CS533,Theory,Tuesday,12:00,14:00,2 hours,12:00-14:00,Room-104,2
+SE-4A,Software Testing,Dr. Amal,SE201,Theory,Tuesday,12:00,14:00,2 hours,12:00-14:00,Room-102,3
+SE-4A,Software Testing,Dr. Amal,SE201,Theory,Wednesday,11:00,12:00,1 hour,11:00-12:00,Room-109,3
+SE-4A,Software Testing,Dr. Amal,SE201,Lab,Monday,14:00,15:00,1 hour,14:00-15:00,Lab-1,3
+SE-4A,Testing Lab,Dr. Amal,SE202,Theory,Tuesday,08:00,09:00,1 hour,08:00-09:00,Room-104,1
+SE-4A,Software Maintenance,Dr. Helia,SE203,Theory,Tuesday,10:00,12:00,2 hours,10:00-12:00,Room-108,3
+SE-4A,Software Maintenance,Dr. Helia,SE203,Theory,Monday,12:00,13:00,1 hour,12:00-13:00,Room-103,3
+SE-4A,Software Maintenance,Dr. Helia,SE203,Lab,Thursday,12:00,13:00,1 hour,12:00-13:00,Lab-3,3
+SE-4A,Quality Metrics,Dr. Helia,SE204,Theory,Friday,10:00,12:00,2 hours,10:00-12:00,Room-108,2
+SE-4B,Requirements Analysis,Dr. Aziz,SE210,Theory,Monday,08:00,10:00,2 hours,08:00-10:00,Room-107,3
+SE-4B,Requirements Analysis,Dr. Aziz,SE210,Theory,Tuesday,13:00,14:00,1 hour,13:00-14:00,Room-106,3
+SE-4B,Requirements Analysis,Dr. Aziz,SE210,Lab,Thursday,09:00,10:00,1 hour,09:00-10:00,Lab-1,3
+SE-4B,Design Patterns,Dr. Aziz,SE211,Theory,Wednesday,14:00,16:00,2 hours,14:00-16:00,Room-103,3
+SE-4B,Design Patterns,Dr. Aziz,SE211,Theory,Friday,09:00,10:00,1 hour,09:00-10:00,Room-101,3
+SE-4B,Design Patterns,Dr. Aziz,SE211,Lab,Thursday,11:00,12:00,1 hour,11:00-12:00,Lab-4,3
+SE-4B,Design Lab,Dr. Aziz,SE212,Theory,Tuesday,08:00,09:00,1 hour,08:00-09:00,Room-107,1
+SE-4B,Software Verification,Dr. Sinan,SE213,Theory,Monday,13:00,15:00,2 hours,13:00-15:00,Room-109,2
+SE-3A,Project Management,Dr. Jamal,SE301,Theory,Wednesday,09:00,11:00,2 hours,09:00-11:00,Room-107,3
+SE-3A,Project Management,Dr. Jamal,SE301,Theory,Tuesday,10:00,11:00,1 hour,10:00-11:00,Room-101,3
+SE-3A,Project Management,Dr. Jamal,SE301,Lab,Friday,13:00,14:00,1 hour,13:00-14:00,Lab-5,3
+SE-3A,Agile Methods,Dr. Maha,SE302,Theory,Monday,14:00,16:00,2 hours,14:00-16:00,Room-110,3
+SE-3A,Agile Methods,Dr. Maha,SE302,Theory,Tuesday,14:00,15:00,1 hour,14:00-15:00,Room-108,3
+SE-3A,Agile Methods,Dr. Maha,SE302,Lab,Thursday,13:00,14:00,1 hour,13:00-14:00,Lab-3,3
+SE-3A,Agile Lab,Dr. Maha,SE303,Theory,Tuesday,12:00,13:00,1 hour,12:00-13:00,Room-106,1
+SE-3A,Risk Management,Dr. Jamal,SE304,Theory,Friday,11:00,13:00,2 hours,11:00-13:00,Room-102,2
+SE-3B,Quality Assurance,Dr. Sinan,SE310,Theory,Friday,09:00,11:00,2 hours,09:00-11:00,Room-104,3
+SE-3B,Quality Assurance,Dr. Sinan,SE310,Theory,Monday,09:00,10:00,1 hour,09:00-10:00,Room-103,3
+SE-3B,Quality Assurance,Dr. Sinan,SE310,Lab,Tuesday,14:00,15:00,1 hour,14:00-15:00,Lab-2,3
+SE-3B,QA Lab,Dr. Sinan,SE311,Theory,Wednesday,11:00,12:00,1 hour,11:00-12:00,Room-107,1
+SE-3B,Performance Testing,Dr. Yasmin,SE312,Theory,Monday,11:00,13:00,2 hours,11:00-13:00,Room-107,3
+SE-3B,Performance Testing,Dr. Yasmin,SE312,Theory,Wednesday,10:00,11:00,1 hour,10:00-11:00,Room-106,3
+SE-3B,Performance Testing,Dr. Yasmin,SE312,Lab,Thursday,14:00,15:00,1 hour,14:00-15:00,Lab-5,3
+SE-3B,Performance Lab,Dr. Yasmin,SE313,Theory,Wednesday,08:00,10:00,2 hours,08:00-10:00,Room-101,2
+BIT-2A,Digital Forensics,Dr. Noor,BIT201,Theory,Thursday,12:00,14:00,2 hours,12:00-14:00,Room-107,3
+BIT-2A,Digital Forensics,Dr. Noor,BIT201,Theory,Wednesday,15:00,16:00,1 hour,15:00-16:00,Room-107,3
+BIT-2A,Digital Forensics,Dr. Noor,BIT201,Lab,Tuesday,12:00,13:00,1 hour,12:00-13:00,Lab-5,3

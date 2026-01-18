@@ -46,27 +46,15 @@ st.markdown("""
 # Title
 st.markdown('<div class="main-header">📚 INTELLIGENT TIMETABLE GA SYSTEM</div>', unsafe_allow_html=True)
 
-# Sidebar controls
-st.sidebar.header("⚙️ Configuration")
-st.sidebar.warning("⚠️ Tip: Minimum values may produce same results. Use higher values for better variation!")
-
-generations = st.sidebar.slider("Generations", 20, 200, 80, help="More generations = better optimization but slower")
-population_size = st.sidebar.slider("Population Size", 15, 100, 40, help="Larger population = more diversity but slower")
-
-# Generate timetable button
-if st.sidebar.button("🚀 Generate Timetable", key="generate"):
+# Auto-generate timetable on page load
+if 'df_timetable' not in st.session_state:
     with st.spinner("Generating timetable..."):
         ga = GeneticAlgorithmTimetable(csv_file="timetable_data.csv")
-        timetable, fitness = ga.run(generations=generations, population_size=population_size)
-        
-        print(f"DEBUG: Timetable length: {len(timetable) if timetable else 0}")
-        print(f"DEBUG: Fitness value: {fitness}, Type: {type(fitness)}")
+        timetable, fitness = ga.run(generations=30, population_size=20)
         
         if timetable:
             df_tt = pd.DataFrame(timetable)
             df_tt.to_csv("final_timetable.csv", index=False)
-            
-            # Store in session state
             st.session_state.df_timetable = df_tt
             st.session_state.fitness = float(fitness) if fitness else 0
             st.success("✅ Timetable generated successfully!")
@@ -274,23 +262,3 @@ if 'df_timetable' in st.session_state:
             st.metric("Faculty Members", len(df_tt['Faculty'].unique()))
         with col4:
             st.metric("Rooms Used", len(df_tt['Room'].unique()))
-
-else:
-    st.info("👈 Click 'Generate Timetable' button in the sidebar to get started!")
-    
-    # Show sample data info
-    st.markdown('<div class="sub-header">About This System</div>', unsafe_allow_html=True)
-    st.write("""
-    This intelligent timetable scheduling system uses **Genetic Algorithm** to:
-    
-    ✅ Avoid scheduling conflicts (rooms, faculty, classes)
-    ✅ Distribute lectures and labs across different days
-    ✅ Respect faculty and class workload limits
-    ✅ Optimize classroom utilization
-    
-    **Features:**
-    - 📊 Interactive dashboard with multiple views
-    - 🔍 Search and filter by section
-    - 📥 Download results as CSV or Excel
-    - 📈 Real-time fitness score tracking
-    """)
