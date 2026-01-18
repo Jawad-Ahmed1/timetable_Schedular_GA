@@ -159,13 +159,13 @@ class GeneticAlgorithmTimetable:
                     if conflict:
                         continue
                     
-                    # Check daily hour limits
-                    if daily_class_hours.get((class_name, day),0) + lecture_duration > 4:
+                    # Check daily hour limits (increased from 4 to 6 hours)
+                    if daily_class_hours.get((class_name, day),0) + lecture_duration > 6:
                         continue
                     
                     faculty_conflict = False
                     for faculty in faculties:
-                        if daily_faculty_hours.get((faculty, day),0) + lecture_duration > 5:
+                        if daily_faculty_hours.get((faculty, day),0) + lecture_duration > 7:  # Increased from 5 to 7
                             faculty_conflict = True
                             break
                     if faculty_conflict:
@@ -251,12 +251,12 @@ class GeneticAlgorithmTimetable:
                         continue
                     
                     # Check daily hour limits
-                    if daily_class_hours.get((class_name, day),0) + lab_duration > 4:
+                    if daily_class_hours.get((class_name, day),0) + lab_duration > 6:
                         continue
                     
                     faculty_conflict = False
                     for faculty in faculties:
-                        if daily_faculty_hours.get((faculty, day),0) + lab_duration > 5:
+                        if daily_faculty_hours.get((faculty, day),0) + lab_duration > 7:
                             faculty_conflict = True
                             break
                     if faculty_conflict:
@@ -296,25 +296,46 @@ class GeneticAlgorithmTimetable:
     def calculate_fitness(self, timetable):
         if not timetable:
             return 0
-        fitness = 1000
-        penalty = 0
+        
+        # Count how many classes were actually scheduled
+        scheduled_count = len(timetable)
+        total_expected = len(self.df)  # Total classes that should be scheduled
+        
+        # Penalty for unscheduled classes (most important!)
+        if total_expected > 0:
+            scheduling_penalty = (total_expected - scheduled_count) * 50  # Heavy penalty
+        else:
+            scheduling_penalty = 0
+        
+        # Check for conflicts
+        conflict_penalty = 0
         room_slots, faculty_slots, class_slots = {}, {}, {}
+        
         for entry in timetable:
             key = (entry['Day'], entry['Time Slot'], entry['Room'])
             if key in room_slots:
-                penalty += 100
+                conflict_penalty += 100
             room_slots[key] = entry
+            
             for faculty in str(entry['Faculty']).split(';'):
                 fkey = (entry['Day'], entry['Time Slot'], faculty.strip())
                 if fkey in faculty_slots:
-                    penalty += 75
+                    conflict_penalty += 75
                 faculty_slots[fkey] = entry
+            
             ckey = (entry['Day'], entry['Time Slot'], entry['Class'])
             if ckey in class_slots:
-                penalty += 80
+                conflict_penalty += 80
             class_slots[ckey] = entry
-        fitness -= penalty
-        return max(fitness, 1)
+        
+        total_penalty = scheduling_penalty + conflict_penalty
+        max_fitness = 1000
+        fitness = max(1, max_fitness - total_penalty)
+        
+        # Normalize to percentage
+        normalized_fitness = (fitness / max_fitness) * 100
+        
+        return round(normalized_fitness, 2)
     
     # CROSSOVER: Breed two good timetables
     def crossover(self, parent1, parent2):
