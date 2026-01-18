@@ -1,4 +1,3 @@
-# src/ga_timetable.py
 import random
 import pandas as pd
 from .utils import generate_time_slots, generate_classrooms, load_data
@@ -323,9 +322,26 @@ class GeneticAlgorithmTimetable:
         if not parent1 or not parent2:
             return self.create_individual()
         
-        # Take first half from parent1, second half from parent2
-        split_point = len(parent1) // 2
-        offspring = parent1[:split_point] + parent2[split_point:]
+        # Use multiple crossover strategies for better diversity
+        strategy = random.choice(['single_point', 'two_point', 'uniform'])
+        
+        if strategy == 'single_point':
+            # Take first half from parent1, second half from parent2
+            split_point = len(parent1) // 2
+            offspring = parent1[:split_point] + parent2[split_point:]
+        
+        elif strategy == 'two_point':
+            # Two-point crossover
+            split1 = len(parent1) // 3
+            split2 = (2 * len(parent1)) // 3
+            offspring = parent1[:split1] + parent2[split1:split2] + parent1[split2:]
+        
+        else:  # uniform
+            # Randomly pick from each parent
+            offspring = []
+            for i in range(len(parent1)):
+                offspring.append(random.choice([parent1[i], parent2[i]]))
+        
         return offspring
     
     # MUTATION: Randomly modify a timetable
@@ -335,32 +351,43 @@ class GeneticAlgorithmTimetable:
             return timetable
         
         mutated = [entry.copy() for entry in timetable]
-        mutation_rate = 0.2  # 20% chance to mutate
+        mutation_rate = 0.3  # 30% chance to mutate (increased from 20%)
         
         for entry in mutated:
             if random.random() < mutation_rate:
-                # Randomly change day
-                days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-                entry['Day'] = random.choice(days)
+                mutation_type = random.choice(['day', 'time', 'room', 'swap'])
                 
-                # Randomly change time slot
-                entry['Time Slot'] = random.choice(self.time_slots)
+                if mutation_type == 'day':
+                    # Randomly change day
+                    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+                    entry['Day'] = random.choice(days)
                 
-                # Randomly change room (theory or lab based on type)
-                if entry['Type'] == 'Lab':
-                    available_rooms = [r for r in self.classrooms if 'Lab' in r]
-                else:
-                    available_rooms = [r for r in self.classrooms if 'Lab' not in r]
+                elif mutation_type == 'time':
+                    # Randomly change time slot
+                    entry['Time Slot'] = random.choice(self.time_slots)
                 
-                if available_rooms:
-                    entry['Room'] = random.choice(available_rooms)
+                elif mutation_type == 'room':
+                    # Randomly change room (theory or lab based on type)
+                    if entry['Type'] == 'Lab':
+                        available_rooms = [r for r in self.classrooms if 'Lab' in r]
+                    else:
+                        available_rooms = [r for r in self.classrooms if 'Lab' not in r]
+                    
+                    if available_rooms:
+                        entry['Room'] = random.choice(available_rooms)
+                
+                elif mutation_type == 'swap' and len(mutated) > 1:
+                    # Swap with another random entry
+                    other_idx = random.randint(0, len(mutated) - 1)
+                    mutated[entry.index if hasattr(entry, 'index') else mutated.index(entry)], mutated[other_idx] = mutated[other_idx], entry
                 
                 # Update start and end times
-                start_hour = int(entry['Time Slot'].split(':')[0])
-                duration = int(entry['Duration'].split()[0])
-                end_hour = start_hour + duration
-                entry['Start Time'] = f"{start_hour:02d}:00"
-                entry['End Time'] = f"{end_hour:02d}:00"
+                if mutation_type in ['time', 'day', 'swap']:
+                    start_hour = int(entry['Time Slot'].split(':')[0])
+                    duration = int(entry['Duration'].split()[0])
+                    end_hour = start_hour + duration
+                    entry['Start Time'] = f"{start_hour:02d}:00"
+                    entry['End Time'] = f"{end_hour:02d}:00"
         
         return mutated
     

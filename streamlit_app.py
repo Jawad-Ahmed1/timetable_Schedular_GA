@@ -48,8 +48,10 @@ st.markdown('<div class="main-header">📚 INTELLIGENT TIMETABLE GA SYSTEM</div>
 
 # Sidebar controls
 st.sidebar.header("⚙️ Configuration")
-generations = st.sidebar.slider("Generations", 10, 100, 50)
-population_size = st.sidebar.slider("Population Size", 5, 50, 20)
+st.sidebar.warning("⚠️ Tip: Minimum values may produce same results. Use higher values for better variation!")
+
+generations = st.sidebar.slider("Generations", 20, 200, 80, help="More generations = better optimization but slower")
+population_size = st.sidebar.slider("Population Size", 15, 100, 40, help="Larger population = more diversity but slower")
 
 # Generate timetable button
 if st.sidebar.button("🚀 Generate Timetable", key="generate"):
