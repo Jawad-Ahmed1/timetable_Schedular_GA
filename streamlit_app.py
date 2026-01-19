@@ -44,7 +44,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown('<div class="main-header">📚 INTELLIGENT TIMETABLE GA SYSTEM</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">INTELLIGENT TIMETABLE GA SYSTEM</div>', unsafe_allow_html=True)
 
 # Auto-generate timetable on page load
 if 'df_timetable' not in st.session_state:
@@ -57,9 +57,9 @@ if 'df_timetable' not in st.session_state:
             df_tt.to_csv("final_timetable.csv", index=False)
             st.session_state.df_timetable = df_tt
             st.session_state.fitness = float(fitness) if fitness else 0
-            st.success("✅ Timetable generated successfully!")
+            st.success("Timetable generated successfully!")
         else:
-            st.error("❌ Failed to generate timetable!")
+            st.error("Failed to generate timetable!")
 
 # Check if timetable exists in session
 if 'df_timetable' in st.session_state:
@@ -67,7 +67,7 @@ if 'df_timetable' in st.session_state:
     fitness = st.session_state.get('fitness', 'N/A')
     
     # Create tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Daily Schedule", "📚 Subjects", "🏫 By Section", "👨‍🏫 By Faculty", "📥 Download"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Daily Schedule", "Subjects", " By Section", "By Faculty", "Download"])
     
     # Tab 1: Daily Schedule
     with tab1:
@@ -87,12 +87,12 @@ if 'df_timetable' in st.session_state:
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "Time Slot": st.column_config.TextColumn("⏰ Time Slot"),
-                        "Class": st.column_config.TextColumn("👥 Class"),
-                        "Subject": st.column_config.TextColumn("📖 Subject"),
-                        "Faculty": st.column_config.TextColumn("👨‍🏫 Faculty"),
-                        "Room": st.column_config.TextColumn("🏛️ Room"),
-                        "Type": st.column_config.TextColumn("📝 Type"),
+                        "Time Slot": st.column_config.TextColumn("Time Slot"),
+                        "Class": st.column_config.TextColumn("Class"),
+                        "Subject": st.column_config.TextColumn("Subject"),
+                        "Faculty": st.column_config.TextColumn("Faculty"),
+                        "Room": st.column_config.TextColumn("Room"),
+                        "Type": st.column_config.TextColumn("Type"),
                     }
                 )
     
@@ -106,15 +106,15 @@ if 'df_timetable' in st.session_state:
             section_tt = df_tt[df_tt['Class'] == section]
             subjects = section_tt[['Subject', 'Code', 'Type']].drop_duplicates().sort_values(['Subject'])
             
-            with st.expander(f"📚 {section} ({len(subjects)} Subjects)"):
+            with st.expander(f"{section} ({len(subjects)} Subjects)"):
                 st.dataframe(
                     subjects,
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "Subject": st.column_config.TextColumn("📖 Subject"),
-                        "Code": st.column_config.TextColumn("🔢 Code"),
-                        "Type": st.column_config.TextColumn("📝 Type"),
+                        "Subject": st.column_config.TextColumn("Subject"),
+                        "Code": st.column_config.TextColumn("Code"),
+                        "Type": st.column_config.TextColumn("Type"),
                     }
                 )
     
@@ -152,11 +152,11 @@ if 'df_timetable' in st.session_state:
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "Time Slot": st.column_config.TextColumn("⏰ Time"),
-                        "Subject": st.column_config.TextColumn("📖 Subject"),
-                        "Faculty": st.column_config.TextColumn("👨‍🏫 Faculty"),
-                        "Room": st.column_config.TextColumn("🏛️ Room"),
-                        "Type": st.column_config.TextColumn("📝 Type"),
+                        "Time Slot": st.column_config.TextColumn("Time"),
+                        "Subject": st.column_config.TextColumn("Subject"),
+                        "Faculty": st.column_config.TextColumn("Faculty"),
+                        "Room": st.column_config.TextColumn("Room"),
+                        "Type": st.column_config.TextColumn("Type"),
                     }
                 )
             else:
@@ -211,11 +211,11 @@ if 'df_timetable' in st.session_state:
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "Time Slot": st.column_config.TextColumn("⏰ Time"),
-                        "Subject": st.column_config.TextColumn("📖 Subject"),
-                        "Class": st.column_config.TextColumn("👥 Class"),
-                        "Room": st.column_config.TextColumn("🏛️ Room"),
-                        "Type": st.column_config.TextColumn("📝 Type"),
+                        "Time Slot": st.column_config.TextColumn("Time"),
+                        "Subject": st.column_config.TextColumn("Subject"),
+                        "Class": st.column_config.TextColumn("Class"),
+                        "Room": st.column_config.TextColumn("Room"),
+                        "Type": st.column_config.TextColumn("Type"),
                     }
                 )
             else:
@@ -228,7 +228,7 @@ if 'df_timetable' in st.session_state:
         # CSV download
         csv = df_tt.to_csv(index=False)
         st.download_button(
-            label="📥 Download as CSV",
+            label="Download as CSV",
             data=csv,
             file_name="timetable.csv",
             mime="text/csv"
@@ -242,7 +242,7 @@ if 'df_timetable' in st.session_state:
             
             with open("temp_timetable.xlsx", "rb") as f:
                 st.download_button(
-                    label="📊 Download as Excel",
+                    label="Download as Excel",
                     data=f.read(),
                     file_name="timetable.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
@@ -252,7 +252,7 @@ if 'df_timetable' in st.session_state:
         
         # Display stats
         st.divider()
-        st.write("**📊 Timetable Statistics:**")
+        st.write("**Timetable Statistics:**")
         col1, col2, col3, col4 = st.columns(4)
         with col1:
             st.metric("Total Classes", len(df_tt))

@@ -160,7 +160,7 @@ class GeneticAlgorithmTimetable:
                         continue
                     
                     # Check daily hour limits (increased from 4 to 6 hours)
-                    if daily_class_hours.get((class_name, day),0) + lecture_duration > 6:
+                    if daily_class_hours.get((class_name, day),0) + lecture_duration > 4:
                         continue
                     
                     faculty_conflict = False
@@ -372,7 +372,7 @@ class GeneticAlgorithmTimetable:
             return timetable
         
         mutated = [entry.copy() for entry in timetable]
-        mutation_rate = 0.5  # 50% chance to mutate (increased from 30%)
+        mutation_rate = 0.5  # 50% chance to mutate
         
         for i, entry in enumerate(mutated):
             if random.random() < mutation_rate:
